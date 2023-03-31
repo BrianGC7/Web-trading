@@ -53,7 +53,7 @@ leng.addEventListener('click',() => {
 
 gh.addEventListener('click',() => {
     Toastify({
-        text: "Estoy arreglando mi Github para una mejor visualición, disculpa las molestias",
+        text: "Estoy arreglando mi Github para una mejor visualización, disculpa las molestias",
         duration: 3500,
         close: true,
         gravity: "bottom", // `top` or `bottom`
