@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    margin-top: -64px;
+    background-color: #243d37;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 66px;
+
+}
+.header__nav{
+    height: 0;
+    top:0;
+    position: absolute;
+    width: 100%;
+    margin-top:66px;
+    background-color: #243d37;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+.header__menu{
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    border: none;
+    background-color: #243d37;
+}
+.close{
+    display: none;
+}
+.open{
+    display: block;
+}
+.header__menu:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgba(158, 158, 158, 0.5);
+}
+.header__items{
+    list-style: none;
+    width: 100%;
+}
+.header__items li{
+    margin: 2px 0;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.header__items li:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgba(158, 158, 158, 0.5);
+}
+.header__link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header__icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    min-height: 60px;
+    margin-top: 8px;
+}
+.header__icons div:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    background-color: rgba(158, 158, 158, 0.5);
+}
+.header__icons button{
+    background-color: #243d37;
+    border: none;
+}
+.header__icons button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.header__icons button p {
+    color: #ffffff;
+}
+.active{
+    height: 32vh;
+}
+.section{
+    margin-top: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__parphs-tittle{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 5px 10px;
+}
+.section__parphs p{
+    margin: 0 5%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.section__video{
+    margin: 40px 0;
+}
+.section__video-details{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.section__video-tittle{
+    text-align: center;
+    font-size: 30px;
+}
+.section__video-details iframe{
+    width: 300px;
+    height: 340px;
+    border-radius: 5px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #243d37;
+}
+.footer__items{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 6px;
+}
+.footer__items a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.footer__items{
+    text-decoration: none;
+}
+.footer__descrip{
+    margin: 15px 0;
+    color: #ffffff;
+    text-align: center;
+}
+.footer__descrip p{
+    margin: 5px 0;
+}
+.footer__descrip hr{
+    min-width: 200px;
+    margin: 0 auto;
+}
+.main{
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+.main__container{
+    margin: 0 15px;
+}
+.main h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.main__descrip p{
+    margin: 16px 15px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.main__photo img{
+    width: 280px;
+    height: 400px;
+    margin: 0 15px;
+}
+.trading{
+    margin-top: 64px;
+    padding: 10px 0;
+    line-height: 28px;
+}
+.trading__container{
+    margin: 0 15px;
+}
+.trading__plan{
+    margin: 20px 10px;
+}
+.trading__check{
+    margin: 70px 10px 20px;
+}
+.trading__plan h3,
+.trading__check h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+.tittles{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0 8px;
+}
+.tick{
+    margin-left: 30px;
+}
+.item{
+    margin: 12px 0;
+}
+.trading__plan .item span{
+    font-weight: 700;
+}
+.trading__table{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+caption{
+    font-style:  italic;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.trading__table table{
+    border-collapse: collapse;
+    text-align: center;
+}
+.trading__table th,
+.trading__table td{
+    padding: 5px 15px;
+    border: 2px solid black;
+}
+.dark {
+    background-color: #121212; }
+  
+.actives{
+    color: rgba(236, 236, 210, 0.9); }
+.sweet__title{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 940px){
+    .header__menu{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1024px;
+    }
+    .header__nav{
+        height: auto;
+        top:auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 0px;
+        transition: all .0s ease;
+        align-items: center;
+    } 
+    .header__items{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    .header__items li:hover{
+        cursor: pointer;
+        opacity: 0.5;
+        border-radius: 8px;
+        background-color: rgba(158, 158, 158, 0.5);
+    }
+    .header__icons{
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        min-height: 60px;
+        margin-top: 8px;
+    }
+    .section__container{
+        width: 1024px;
+    }
+    .section__video-details iframe{
+        height: 500px;
+    }
+    .footer__items{   
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        align-items: center;
+    }
+    .footer__container{
+        width: 1024px;
+    }
+    .main{
+        width: 100%;
+        min-height: 100vh;
+
+    }
+    .main__container{
+        width: 1024px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main__descrip{
+        width: 450px;
+    }
+    .main__photo{
+        margin-top: 6%;
+    }  
+    .main__photo img{
+        width: 250px;
+        height: 870px;
+    }
+    .trading{
+        display: flex;
+        justify-content: center;
+    }
+    .trading__container{
+        width: 1024px;
+    }
+}
+@media screen and (min-width: 480px){
+    .footer__items{   
+        display: flex;
+        justify-content: space-around;
+        width: 180px;
+        margin: 0 14px;
+        align-items: center;
+    }
+    .footer__descrip{
+        margin: 0 14px;
+    }
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse
+    }
+    .section__video-details iframe{
+        width: 1000px;
+    }
+    .section__container{
+        min-width: 500px;
+    } 
+    .main__photo img{
+        min-width: 500px;
+    }    
+}
+

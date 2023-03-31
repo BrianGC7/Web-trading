@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de trading</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="header__container">
+            <button class="header__menu">
+                <img class="ham" src="img/icon-menu.svg" alt="">
+                <img class="close"src="img/icon-close.svg" alt="">
+            </button>      
+            <div class="header__nav">
+                <ul class="header__items">
+                    <li><a  class="header__link" href="trade.html">Inicio</a></li>
+                    <li><a  class="header__link" href="check.html">Estrategia</a></li>
+                    <li><a  class="header__link" href="about.html">Sobre mi</a></li>
+                </ul>
+                <div class="header__icons">
+                    <button class="header__mode" id="mode">
+                        <img src="img/dark-mode.svg" alt="DM">
+                        <p class="header__mode-info">Ligth</p>
+                    </button>    
+                    <button class="header__leng">
+                        <img src="img/idioma.svg" alt="">
+                        <p class="header__leng-info">Español</p>
+                    </button>
+                </div>         
+            </div>         
+        </nav>  
+    </header>
+    <section class="section">
+       <div class="section__container">
+        <article class="section__parphs">
+            <h1 class="section__parphs-tittle">
+                PROYECTO FINAL DE TRADING
+            </h1>
+            <p class="">
+                Mediante el backtesting se pondrá a prueba la estrategia seleccionada en el plan de trading sobre el mercado de futuros, 
+                mediante el broker de NinjaTrader. El instrumento seleccionado es Nasdaq del día
+                Cabe destacar que hay indicadores como el volumen, EMA de 50 y 200, como también herramientas como soportes, 
+                resistencias y puntos de confluencias. para ahorrar tiempo en la explicación ya que esta no podía ser tan extenso
+                Se hará una operación de compra (entrada), luego de un analisis analisis tecnico habiendo realizado un pre - mercado, 
+                conteo de ondas y mediante el setup que nos confirma una entrada para poder operar. Todo esto está descripto en el plan de trading. 
+                Donde también se podrá ver los distintos items seleccionados para su un funcionamiento adecuado, 
+                a su vez cuenta con una sección de metas y objetivos los cuales se complementan con el mismo. 
+            </p>
+            <p class="">
+               Como dato no menor, este plan de trading, así como el check-list y el vídeo fueron la base para mi estrategia actua.
+                Que con tiempo y estadisticas fue mutando para que hoy en día pueda operar.
+            </p>
+        </article>
+        <article class="section__video">
+            <h2 class="section__video-tittle">Vídeo explicativo</h2>
+            <div class="section__video-details">
+                <iframe src="https://www.youtube.com/embed/HjRfTNIZPfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+       </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__redes">
+                <div class="footer__items">
+                    <a class="footer__link" href="https://www.linkedin.com/in/briancerna/" target="_blank"><img class="" src="img/linkedin.svg" alt=""></a>
+                    <a class="footer__link" href="https://www.instagram.com/cernabrian" target="_blank"><img class="footer__" src="img/instagram.svg" alt=""></a>
+                    <a class="footer__link" href="https://github.com/Dylan-Marsili" target="_blank"><img class="footer__img" src="img/github.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__descrip">
+                <p>Autor: Brian G. Cerna</p>
+                <hr>
+                <p>© 2023 - Todos los derechos reservados.</p>
+            </div>    
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
